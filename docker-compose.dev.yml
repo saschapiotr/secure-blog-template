@@ -1,16 +1,15 @@
 version: '3.9'
 
 services:
-  webserver:
-    container_name: kirby-vue-dev
+  web:
+    container_name: web
     build:
       context: ./web
-      dockerfile: ./Dokerfile.dev
+      dockerfile: ./Dockerfile.dev
     restart: always
     environment:
       USERID: '1000' #user id of developing user
-    network_mode: host
     ports:
-    - "80:80"
+    - "1312:80"
     volumes:
     - ./web:/var/www/html:rw
