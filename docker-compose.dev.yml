@@ -6,9 +6,9 @@ services:
     build:
       context: ./web
       dockerfile: ./Dockerfile.dev
+      args:
+        - UID=1000 #dev user uuid
     restart: always
-    environment:
-      USERID: '1000' #user id of developing user
     ports:
     - "1312:80"
     volumes:

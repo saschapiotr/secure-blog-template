@@ -44,6 +44,10 @@ RUN chown -R www-data:www-data /var/www/html/
 # Activate Apache modules headers & rewrite
 RUN a2enmod headers rewrite
 
+# Change web server's user id to match local user, replace with your local user id
+ARG UID
+RUN usermod --uid $UID www-data
+
 # Tell container to listen to port 80 at runtime
 EXPOSE 80
 

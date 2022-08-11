@@ -6,5 +6,9 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "scripts": {
+    "dev": "docker-compose -f docker-compose.dev.yml up --remove-orphans",
+    "dev:rb": "docker-compose -f docker-compose.dev.yml up --build web --force-recreate --remove-orphans"
   }
 }
