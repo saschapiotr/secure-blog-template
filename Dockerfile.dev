@@ -1,0 +1,15 @@
+FROM php:8.0-apache-alpine as builder
+
+ENV TZ=Europe/Berlin
+
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
+COPY default.conf /etc/apache2/sites-available/000-default.conf
+
+RUN rm /var/www/html/*
+
+RUN a2enmod headers rewrite
+
+EXPOSE 80
+
+CMD [ "/usr/sbin/apache2ctl", "-DFOREGROUND" ]

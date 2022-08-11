@@ -7,13 +7,13 @@ Icon
 # Temporary files
 # ---------------
 
-/media/*
-!/media/index.html
+*/media/*
+!*/media/index.html
 
 # Lock files
 # ---------------
 
-.lock
+*.lock
 
 # Editors
 # (sensitive workspace files)
@@ -29,25 +29,25 @@ Icon
 # Cache Files
 # ---------------
 
-/site/cache/*
-!/site/cache/index.html
+*/site/cache/*
+!*/site/cache/index.html
 
 # Accounts
 # ---------------
 
-/site/accounts/*
-!/site/accounts/index.html
+*/site/accounts/*
+!*/site/accounts/index.html
 
 # Sessions
 # ---------------
 
-/site/sessions/*
-!/site/sessions/index.html
+*/site/sessions/*
+!*/site/sessions/index.html
 
 # License
 # ---------------
 
-/site/config/.license
+*/site/config/.license
 
 # Node
 # ---------------
