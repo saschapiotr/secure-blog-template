@@ -9,3 +9,5 @@
   ]) ?>
   <!--<link rel="shortcut icon" type="image/x-icon" href="<?= url('favicon.ico') ?>">-->
 </head>
+<body>
+  <main>
