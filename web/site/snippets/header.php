@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title><?= $site->title() ?> | <?= $page->title() ?></title>
   <?= css([
-    'style.css'
+    'style/index.css'
   ]) ?>
   <!--<link rel="shortcut icon" type="image/x-icon" href="<?= url('favicon.ico') ?>">-->
 </head>
