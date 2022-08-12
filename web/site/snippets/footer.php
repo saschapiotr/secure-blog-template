@@ -2,6 +2,6 @@
 <body>
 <footer>
 <?= js([
-  'js/index.js'
+  'assets/js/index.js'
 ]) ?>
 </footer>
