@@ -1,8 +1,8 @@
-<?php snippet('header') ?>
+<?php snippet('header/header') ?>
 
 <?php 
   global $modalOpen;
-  snippet('modal') 
+  snippet('modal/modal') 
 ?>
 
 <form method="post">
