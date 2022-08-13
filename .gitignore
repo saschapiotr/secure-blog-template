@@ -53,3 +53,9 @@ Icon
 # ---------------
 
 node_modules
+
+# Built files
+# ---------------
+
+web/assets/js/*
+web/assets/css/*
