@@ -2,6 +2,8 @@
 
 A *Work in Progress* developer friendly, security and privacy focussed template for teb projects based on kirbycms.
 
+**check out the git issues to track the development**
+
 ## Privacy & Security
 
 This template is an attempt to create a web stack that puts privacy and security at the center. In my activist work I have been working for people, organizations and institutions that are in increased danger of repression due to their activist or journalistic contexts. And therefore have higher privacy and security requirements for their web presence.
