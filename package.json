@@ -9,6 +9,7 @@
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
+    "log4js": "^6.6.1",
     "sass": "^1.54.4"
   },
   "config": {
