@@ -1,4 +1,4 @@
-const { src, dest, parallel } = require("gulp");
+const { src, dest, parallel, watch } = require("gulp");
 const sourcemaps = require('gulp-sourcemaps');
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
@@ -30,4 +30,7 @@ function css(cb) {
   cb();
 }
 
-exports.build = parallel(js, css)
+exports.dev = () => {
+  watch('web/site/**/*js', js);
+  watch('web/site/**/*css', css);
+}
