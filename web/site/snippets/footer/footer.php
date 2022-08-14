@@ -1,7 +1,7 @@
   </main>
-<body>
+</body>
 <footer>
 <?= js([
-  'assets/js/index.js'
+  'assets/js/index.min.js'
 ]) ?>
 </footer>
