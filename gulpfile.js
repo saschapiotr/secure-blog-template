@@ -7,7 +7,7 @@ const sass = require('gulp-sass')(require('sass'));
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 
-function js(cb) {
+const js = (cb) => {
   src(['web/site/snippets/**/*js', 'web/site/templates/**/*js'])
     .pipe(sourcemaps.init())
     .pipe(babel())
@@ -18,7 +18,7 @@ function js(cb) {
   cb();
 }
 
-function css(cb) {
+const css = (cb) => {
   src(['web/site/snippets/**/*scss', 'web/site/templates/**/*scss'])
     .pipe(sourcemaps.init())
     .pipe(sass.sync().on('error', sass.logError))
